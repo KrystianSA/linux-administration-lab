@@ -1,6 +1,6 @@
 # SSH Remote Access Configuration
 
-<img width="500" height="400" alt="established connection ssh local to mw" src="https://github.com/user-attachments/assets/169f0e13-6145-48dd-b5e0-d9c4911da898" />
+<img width="1000" height="400" alt="established connection ssh local to mw" src="https://github.com/user-attachments/assets/169f0e13-6145-48dd-b5e0-d9c4911da898" />
 
 ## Goal
 
