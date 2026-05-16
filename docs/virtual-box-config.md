@@ -1,8 +1,24 @@
 # Setting Up VirtualBox Environment
 
+# Table of Contents
+
+- [VM Name](#vm-name)
+- [VM Folder](#vm-folder)
+- [ISO Image](#iso-image)
+- [Unchecked: Proceed with Unattended Installation](#unchecked-proceed-with-unattended-installation)
+- [Base Memory (RAM)](#base-memory-ram)
+- [Number of CPUs](#number-of-cpus)
+- [Checked: Enable EFI](#checked-enable-efi)
+- [Disk Size](#disk-size)
+- [Unchecked: Pre-allocate Full Size](#unchecked-pre-allocate-full-size)
+- [Network Configuration](#network-configuration)
+
+---
+
 ## VM Configuration
 
 ### VM Name
+
 `ubuntu-server-lab`
 
 Purpose:
@@ -11,6 +27,7 @@ Create a dedicated Linux administration lab environment.
 ---
 
 ### VM Folder
+
 Default VirtualBox location.
 
 Purpose:
@@ -19,6 +36,7 @@ Stores VM configuration files, virtual disks, logs, and snapshots.
 ---
 
 ### ISO Image
+
 `Ubuntu Server ARM64`
 
 Purpose:
@@ -40,6 +58,7 @@ Manual installation provides:
 ---
 
 ### Base Memory (RAM)
+
 `4096 MB`
 
 Reason:
@@ -57,6 +76,7 @@ Provides a balance between:
 ---
 
 ### Number of CPUs
+
 `2 CPUs`
 
 Reason:
@@ -84,6 +104,7 @@ Benefits:
 ---
 
 ### Disk Size
+
 `25 GB`
 
 Reason:
@@ -105,3 +126,15 @@ Benefits:
 - saves host storage space
 - faster VM creation
 - flexible for homelab usage
+
+---
+
+### Network Configuration
+
+`NAT`
+
+Reason:
+NAT (Network Address Translation) allows the virtual machine to access the internet through the host machine connection.
+
+Benefits:
+- isolates the VM from the local home network
