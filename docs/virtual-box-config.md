@@ -1,5 +1,7 @@
 # Setting Up VirtualBox Environment
 
+<img width="500" height="400" alt="Zrzut ekranu 2026-05-16 o 13 16 38" src="https://github.com/user-attachments/assets/645e5ef1-d960-4a55-8145-84afe8a6f4df" />`
+
 # Table of Contents
 
 - [VM Name](#vm-name)
@@ -18,8 +20,6 @@
 ## VM Configuration
 
 ### VM Name
-
-`ubuntu-server-lab`
 
 Purpose:
 Create a dedicated Linux administration lab environment.
