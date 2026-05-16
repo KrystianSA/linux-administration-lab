@@ -1,5 +1,7 @@
 # Starting Ubuntu Server VM - Installation Process
 
+<img width="500" height="350" alt="Zrzut ekranu 2026-05-16 o 12 37 04" src="https://github.com/user-attachments/assets/0c51f610-4906-4a06-b8a5-c4a719a3f507" />
+
 - [GRUB Bootloader](#grub-bootloader)
 - [Preferred Language](#preferred-language)
 - [Installation Type](#installation-type)
