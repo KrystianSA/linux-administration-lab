@@ -8,8 +8,8 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 
 - [VirtualBox Environment and Ubuntu Server VM](docs/Virtualization)
 - [SSH Configuration and Hardening](docs/SSH)
-- [Linux Filesystem](docs/Linux Fundamentals)
-- [User and access management](docs/User and Access Management)
+- [Linux Filesystem](docs/Linux-Fundamentals)
+- [User and access management](docs/User-and-Access-Management)
 - [Firewall configuration with UFW]()
 - [Fail2Ban setup and intrusion prevention]()
 - [System monitoring and log analysis]()
