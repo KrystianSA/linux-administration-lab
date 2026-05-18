@@ -15,7 +15,7 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 - [Fail2Ban setup and intrusion prevention]()
 - [System monitoring and log analysis]()
 - [Cron automation and maintenance tasks]()
-- [Linux networking and troubleshooting]()
+- [Linux troubleshooting](docs/Troubleshooting)
 - [Linux terminal administration and system services]()
 
 ## Technologies
