@@ -23,11 +23,11 @@ Best practice:
 
 ## 1. Check Current Root Login Configuration
 
-bash id="gk29d1" grep -n PermitRootLogin /etc/ssh/sshd_config 
+grep -n PermitRootLogin /etc/ssh/sshd_config 
 
 Observed configuration:
 
-text id="n28sq0" #PermitRootLogin prohibit-password 
+#PermitRootLogin prohibit-password 
 
 ---
 
@@ -94,6 +94,8 @@ sudo journalctl -u ssh -n 20
 Observed logs:
 
 Failed password for root Accepted password for krystian 
+
+<img width="1137" height="245" alt="Zrzut ekranu 2026-05-18 o 11 53 38" src="https://github.com/user-attachments/assets/03b7554c-6de9-4c5f-9f8d-4a835e410abd" />
 
 ---
 
