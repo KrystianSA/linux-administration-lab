@@ -8,7 +8,7 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 
 - [VirtualBox Environment](docs/virtual-box-config.md)
 - [Ubuntu Server VM - Installation Process](docs/starting-wm.md)
-- [SSH Remote Access Configuration](docs/ssh.md)
+- [SSH Configuration and Hardening](docs/SSH)
 - [Linux Filesystem](docs/linux-filesystem.md)
 - [User and access management]()
 - [Firewall configuration with UFW]()
