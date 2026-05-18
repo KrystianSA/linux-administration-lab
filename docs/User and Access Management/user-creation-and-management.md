@@ -1,15 +1,5 @@
 # User Creation and Management
 
-## Goal
-
-Learn how Linux user management works:
-- creating users
-- user IDs
-- groups
-- home directories
-- switching users
-- login environments
-
 ---
 
 # Create New User
