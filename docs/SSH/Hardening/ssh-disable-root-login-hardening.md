@@ -35,21 +35,21 @@ text id="n28sq0" #PermitRootLogin prohibit-password
 
 Edit SSH daemon configuration:
 
-bash id="7skf02" sudo nano /etc/ssh/sshd_config 
+sudo nano /etc/ssh/sshd_config 
 
 Change:
 
-text id="0sl1az" #PermitRootLogin prohibit-password 
+#PermitRootLogin prohibit-password 
 
 to:
 
-text id="d0sqw1" PermitRootLogin no 
+PermitRootLogin no 
 
 ---
 
 ## 3. Validate SSH Configuration Syntax
 
-bash id="h2kz91" sudo sshd -t 
+sudo sshd -t 
 
 Validation result:
 - no output returned
@@ -59,17 +59,17 @@ Validation result:
 
 ## 4. Restart SSH Service
 
-bash id="x9dka1" sudo systemctl restart ssh 
+sudo systemctl restart ssh 
 
 ---
 
 ## 5. Verify Effective SSH Configuration
 
-bash id="z8qj12" sudo sshd -T | grep permitrootlogin 
+sudo sshd -T | grep permitrootlogin 
 
 Expected result:
 
-text id="f0a2sw" permitrootlogin no 
+ermitrootlogin no 
 
 ---
 
@@ -77,11 +77,11 @@ text id="f0a2sw" permitrootlogin no
 
 Attempted direct root SSH login:
 
-bash id="m2s8k2" ssh root@localhost -p 2222 
+ssh root@localhost -p 2222 
 
 Observed result:
 
-text id="j92ks1" Permission denied 
+Permission denied 
 
 ---
 
@@ -89,11 +89,11 @@ text id="j92ks1" Permission denied
 
 Checked SSH authentication logs:
 
-bash id="w2j9sl" sudo journalctl -u ssh -n 20 
+sudo journalctl -u ssh -n 20 
 
 Observed logs:
 
-text id="s1k2mz" Failed password for root Accepted password for krystian 
+Failed password for root Accepted password for krystian 
 
 ---
 
