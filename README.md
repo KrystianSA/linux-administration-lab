@@ -14,9 +14,8 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 - [Firewall configuration with UFW](docs/Networking-and-Firewall)
 - [Fail2Ban setup and intrusion prevention](docs/Fail2ban)
 - [System monitoring and log analysis]()
-- [Cron automation and maintenance tasks]()
+- [Cron automation and maintenance tasks](docs/Automation-and-Scheduling)
 - [Linux troubleshooting](docs/Troubleshooting)
-- [Linux terminal administration and system services]()
 
 ## Technologies
 
