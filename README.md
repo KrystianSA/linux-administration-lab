@@ -17,6 +17,7 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 - [Cron automation and maintenance tasks](docs/Automation-and-Scheduling)
 - [Linux troubleshooting](docs/Troubleshooting)
 - [Docker and Reverse Proxy](docs/Docker-and-Reverse-Proxy)
+- [Self Hosted App](docs/Self-Hosted-App)
 
 ## Technologies
 
