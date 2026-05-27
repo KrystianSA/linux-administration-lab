@@ -10,12 +10,12 @@ This project documents the deployment of Uptime Kuma in a Linux homelab environm
 
 The setup includes:
 
-- [Docker Compose deployment](docs/Uptime-Kuma/deployment.md)
-- [Nginx reverse proxy](docs/Uptime-Kuma/reverse.proxy.md)
-- [Networking](docs/Uptime-Kuma/networking)
-- [Security](docs/Uptime-Kuma/security.md)
-- [Troubleshooting analysis](docs/Uptime-Kuma/troubleshooting.md)
-- [Docker Compose](docs/Uptime-Kuma/docker-compose.yml)
+- [Docker Compose deployment](deployment.md)
+- [Nginx reverse proxy](reverse.proxy.md)
+- [Networking](networking)
+- [Security](security.md)
+- [Troubleshooting analysis](troubleshooting.md)
+- [Docker Compose](docker-compose.yml)
 
 ---
 
