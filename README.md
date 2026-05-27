@@ -6,7 +6,7 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 
 # 📚 Table of Contents
 
-# 🚀 - [Self Hosted Application](docs/Self-Hosted-App)
+# 🚀 - [Self Hosted Application](docs/Uptime-Kuma)
   
 | Uptime Kuma | Service monitoring and uptime tracking | Docker + Nginx |
 
