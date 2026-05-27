@@ -1,0 +1,23 @@
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:2
+    container_name: uptime-kuma
+    restart: always
+    ports:
+      - "127.0.0.1:3001:3001"
+    volumes:
+      - /home/krystian/uptime-kuma/uptime-kuma-data:/app/data
+    environment:
+      - TZ=Europe/Warsaw  # Set the timezone (change to your preferred local timezone so monitoring t>
+      - UMASK=0022  # Set your file permissions manually    
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 5s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
