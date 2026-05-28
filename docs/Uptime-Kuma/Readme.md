@@ -16,6 +16,7 @@ The setup includes:
 - [Security](security.md)
 - [Troubleshooting analysis](troubleshooting.md)
 - [Docker Compose](docker-compose.yml)
+- [Configuration](configuration.md)
 
 ---
 
