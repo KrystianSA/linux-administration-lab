@@ -2,6 +2,8 @@
 
 Self-hosted monitoring stack deployed on Ubuntu Server using Docker Compose and Nginx Reverse Proxy.
 
+<img width="1921" height="515" alt="Zrzut ekranu 2026-05-28 o 11 40 01" src="https://github.com/user-attachments/assets/8de5186e-13f9-400c-9e8b-27e959033e4e" />
+
 ---
 
 # Project Overview
