@@ -1,4 +1,4 @@
-# linux-administration-lab
+# linux-administration
 
 Personal Linux administration lab using VirtualBox and Ubuntu Server focused on system hardening, SSH configuration, firewall management, log monitoring, cron automation, and troubleshooting.
 
@@ -6,10 +6,12 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 
 # 📚 Table of Contents
 
-# 🚀 - [Self Hosted Application](docs/Uptime-Kuma)
-  
-| Uptime Kuma | Service monitoring and uptime tracking | Docker + Nginx |
+# 🚀 - Self Hosted Applications
 
+- [Uptime-Kuma](docs/Uptime-Kuma) - endpoint monitoring | Docker + Nginx |
+
+- [Netdata](docs/Netdata) - linux environment monitoring | Docker + Nginx |
+  
 ## 🚀 Infrastructure
 
 - [Docker and Reverse Proxy](docs/Docker-and-Reverse-Proxy)
