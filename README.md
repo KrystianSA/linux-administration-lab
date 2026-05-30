@@ -12,6 +12,10 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 
 - [Netdata](docs/Netdata) - linux environment monitoring | Docker + Nginx |
   
+## Scripts 
+
+- [Bash Scripts](docs/Scripts)
+
 ## 🚀 Infrastructure
 
 - [Docker and Reverse Proxy](docs/Docker-and-Reverse-Proxy)
