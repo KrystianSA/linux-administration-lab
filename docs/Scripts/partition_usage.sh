@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 Partition=${1:-/}
 
 if [ -d "$Partition" ];then
