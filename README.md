@@ -21,6 +21,7 @@ Personal Linux administration lab using VirtualBox and Ubuntu Server focused on 
 - [Docker and Reverse Proxy](docs/Docker-and-Reverse-Proxy)
 - [System monitoring and log analysis](docs/Monitoring-and-log-analysis)
 - [Linux troubleshooting](docs/Troubleshooting)
+- [Logical Volume Management](docs/LVM)
 
 ---
 
