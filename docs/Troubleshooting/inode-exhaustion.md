@@ -1,4 +1,4 @@
-# Inode Exhaustion
+# Troubleshooting #2 — Inode Exhaustion (df full but du shows little)
 
 ## What is an inode?
 
@@ -62,6 +62,47 @@ rm -rf node_modules           # JavaScript
 pip cache purge               # Python
 mvn dependency:purge-local-repository  # Java/Maven
 ```
+
+**Session/cache files** (PHP sessions, app cache):
+```bash
+find /var/lib/php/sessions -type f -mtime +7 -delete  # older than 7 days
+```
+
+---
+
+## Common culprits
+
+| Location | What causes it |
+|---|---|
+| `/usr/src/linux-headers-*/include/config` | Old kernel headers |
+| `node_modules` | JavaScript dependencies |
+| `/var/lib/dpkg/info` | apt package metadata |
+| `/tmp` or `/var/tmp` | Temp files from apps |
+| PHP session dirs | Uncleaned session files |
+| Email queues (`/var/spool/mail`) | Undelivered mail |
+
+---
+
+## disk full vs inode exhaustion — key difference
+
+| | Disk Full | Inode Exhaustion |
+|---|---|---|
+| `df -h` | 100% | Normal (e.g. 40%) |
+| `df -i` | Normal | 100% |
+| Cause | Large files, ghost files | Millions of small files |
+| Fix | Delete large files, restart processes | Delete directories with many small files |
+| Error message | `No space left on device` | `No space left on device` (same!) |
+
+---
+
+## Quick reference
+
+```bash
+df -h                          # check disk space
+df -i                          # check inode usage
+find / -xdev -printf '%h\n' 2>/dev/null | sort | uniq -c | sort -rn | head -20  # find inode hogs
+sudo apt autoremove            # clean old kernels
+``````
 
 **Session/cache files** (PHP sessions, app cache):
 ```bash
