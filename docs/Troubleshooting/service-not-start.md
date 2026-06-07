@@ -56,21 +56,28 @@ namei -l /path/to/file     # check permissions along the full path
 
 ### 5. Crash loop ("start request repeated too quickly")
 
-systemd gives up restarting if service crashes too fast:
+systemd gives up restarting if the service crashes too many times within a time window.
 
-```bash
-journalctl -u <service>         # find the actual crash reason
-systemctl reset-failed <service> # reset the failure counter
-systemctl start <service>        # try again
-```
-
-To prevent future crash loops, add to unit file:
+Default behavior controlled by two parameters in the unit file:
 ```ini
 [Service]
-RestartSec=5
-StartLimitBurst=3
-StartLimitIntervalSec=60
+StartLimitBurst=3          # max 3 crashes...
+StartLimitIntervalSec=60   # ...within 60 seconds → systemd gives up
+RestartSec=5               # wait 5s between restart attempts
 ```
+
+This means: "if the service crashes 3 times in 60 seconds, mark as failed and stop trying."
+The time window matters — 3 crashes over 3 weeks is fine; 3 crashes in 5 seconds means something is fundamentally broken.
+
+Fix flow:
+```bash
+journalctl -u <service> -n50     # 1. find the actual crash reason
+# 2. fix the underlying problem
+systemctl reset-failed <service> # 3. reset the failure counter (required!)
+systemctl start <service>        # 4. try again
+```
+
+**Important:** `systemctl reset-failed` is required before `systemctl start` — without it, systemd refuses to start the service because it's still in `failed` state.
 
 ---
 
